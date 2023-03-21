@@ -90,7 +90,6 @@ return (
       onSearch={handleSearch}
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
-      style={{ width: 300, margin: '1%' }}
       allowClear
     
     />
@@ -109,8 +108,6 @@ return (
       onCancel={handleCancel}
       footer={null}
     >    
-
-
       <img src={modalContent.image} alt={modalContent.name} />
       <p>{modalContent.description}</p>
     </Modal>
