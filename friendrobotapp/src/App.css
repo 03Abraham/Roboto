@@ -1,1 +1,85 @@
+@font-face {
+  font-family: sega;
+  src: url(./fonts/SEGA.TTF);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+html {
+  text-align: center;
+  justify-content: space-around;
+
+  background: rgb(1, 153, 124);
+  background: linear-gradient(
+    66deg,
+    rgba(1, 153, 124, 1) 0%,
+    rgba(13, 79, 105, 1) 53%,
+    rgba(34, 101, 182, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Sega;
+  color: skyblue;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.cards__contenair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  /* margin-right: 300px;
+  margin-left: 300px; */
+}
+
+@media screen and (min-width: 900px) {
+  .cards__contenair {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 400px;
+    margin-left: 400px;
+  }
+}
+
+.card {
+  width: 240px;
+  height: 358px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+  background-color: skyblue;
+  border-color: skyblue;
+}
+
+.card img {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: orange;
+}
+
+.card:active {
+  transform: scale(0.9);
+}
