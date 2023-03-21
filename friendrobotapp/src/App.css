@@ -42,8 +42,7 @@ h1 {
   text-align: center;
   justify-content: center;
   padding: 0;
-  /* margin-right: 300px;
-  margin-left: 300px; */
+  
 }
 
 @media screen and (min-width: 900px) {
