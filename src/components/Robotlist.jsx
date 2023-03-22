@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { Card, Input, Modal } from 'antd';
 const { Meta } = Card;
+
 const Robotlist = () => {
   const [initialRobots, setInitialRobots] = useState([]);
   const [robots, setRobots] = useState([]);
@@ -58,7 +59,7 @@ const Robotlist = () => {
     );
     setRobots(filteredRobots);
   }, [searchTerm, initialRobots]);
-  
+
   const renderRobots = useCallback(() => {
     return robots.map((robot) => (
       <Card className='card'
@@ -88,6 +89,7 @@ return (
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
       allowClear
+      className='chearch'
     
     />
     
